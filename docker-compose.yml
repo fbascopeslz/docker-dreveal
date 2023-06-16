@@ -1,0 +1,8 @@
+services:
+  sql-server:
+    build:      
+      context: .
+      dockerfile: Dockerfile
+    container_name: sql-server   
+    ports:
+      - "1435:1433"   
